@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création d'un Podcast Équestre avec la LEWB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #800020; /* Bordeaux */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            height: 50px;
+        }
+        #logo-lewb {
+            right: 10px;
+        }
+        #logo-heph {
+            left: 10px;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            display: none;
+            margin-bottom: 2rem;
+        }
+        section.active {
+            display: block;
+        }
+        .hero-image {
+            width: 70%;
+            height: auto;
+            display: block;
+            margin: 2rem auto 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Création d'un Podcast Équestre avec la LEWB</h1>
+        <img src="logo_lewb.png" alt="Logo LEWB" id="logo-lewb">
+        <img src="logo_heph.png" alt="Logo HEPH Condorcet" id="logo-heph">
+    </header>
+    <nav>
+        <a href="#" onclick="showPage('home')">Accueil</a>
+        <a href="#" onclick="showPage('about')">À propos</a>
+        <a href="#" onclick="showPage('resources')">Ressources</a>
+    </nav>
+    <main>
+        <section id="home" class="active">
+            <h2>Accueil</h2>
+            <p>Bienvenue sur le site dédié à mon TFE : "Création d'un podcast équestre avec la LEWB". Découvrez ce projet qui vise à mettre en lumière le monde équestre wallon à travers un format moderne et impactant.</p>
+            <p>
+                Bienvenue sur notre plateforme dédiée aux passionnés de sport !
+            </p>
+            <p>
+                Découvrez un espace unique où les amateurs et professionnels du sport se retrouvent pour partager, acheter, et vendre du matériel de qualité. Que vous soyez débutant, expert, ou simplement curieux, notre mission est de vous accompagner dans votre pratique en vous proposant des équipements adaptés à vos besoins et à des prix accessibles.
+            </p>
+            <p>
+                Plongez dans une communauté dynamique, engagée dans une démarche éco-responsable, où chaque article trouve une nouvelle vie. Ensemble, faisons du sport une aventure plus durable et solidaire.
+            </p>
+            <p>
+                Prêt à démarrer ? Explorez nos catégories et trouvez ce qu'il vous faut pour atteindre vos objectifs sportifs ! 💪
+            </p>
+            <img src="cavaliere_saut.jpg" alt="Jeune cavalière sautant un obstacle" class="hero-image">
+        </section>
+        <section id="about">
+            <h2>À propos</h2>
+            <p>
+                Bienvenue sur mon site dédié à la création d’un podcast pour la Ligue Équestre Wallonie Bruxelles (LEWB) !
+            </p>
+            <p>
+                Je m’appelle Antoine, et ce projet s’inscrit dans le cadre de mon Travail de Fin d'Études. Passionné par le monde équestre et convaincu du pouvoir de la communication, j’ai décidé de créer un podcast pour donner une nouvelle voix à la communauté équestre en Wallonie et à Bruxelles.
+            </p>
+            <p>
+                Mon objectif est clair : rassembler les passionnés de sports équestres autour d’histoires inspirantes, de conseils d’experts et d’actualités qui reflètent la richesse de cet univers. Avec ce podcast, je souhaite :
+            </p>
+            <ul>
+                <li>Partager les expériences et témoignages des cavaliers, entraîneurs et professionnels qui animent la LEWB.</li>
+                <li>Mettre en lumière les projets, événements et innovations qui font vibrer notre communauté.</li>
+                <li>Offrir un espace d’échange et d’inspiration pour tous les amoureux des chevaux.</li>
+            </ul>
+            <p>
+                Merci de m’accompagner dans cette aventure ! J’espère que ce podcast saura vous inspirer autant que j’ai de plaisir à le créer.
+            </p>
+            <p>
+                À très bientôt,<br>
+                Antoine 🐴🎙
+            </p>
+        </section>
+        <section id="resources">
+            <h2>Ressources</h2>
+            <p>Téléchargez ou accédez aux ressources liées à ce TFE :</p>
+            <ul>
+                <li><a href="Projet_TFE_LEWB.pdf" target="_blank">Projet complet : Création d'un Podcast Équestre</a></li>
+                <li>
+                    <a href="https://teams.microsoft.com/l/message/19:m707hL49MvLsjypcQW8cCryQRhulBpDRYmiMKirxfnM1@thread.tacv2/1732444208870?tenantId=749d4192-cb4a-491e-80f8-d04f28350c89&groupId=434bf056-76bb-4493-9634-17133af3829d&parentMessageId=1732444208870&teamName=M%C3%A9thodo%20du%20TFE%20(N.%20Bruneel)%20-Com&channelName=General&createdTime=1732444208870" target="_blank">
+                        Lien vers les discussions Teams (Méthodo du TFE)
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 - Projet TFE - Antoine Surin</p>
+    </footer>
+    <script>
+        function showPage(pageId) {
+            // Masquer toutes les sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            // Afficher la section sélectionnée
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
